@@ -1,0 +1,402 @@
+#
+# Guideline: displayed in our guidelines and to caretakers when reviewing reports
+#
+
+guidelines:
+
+  - name: Bestiality
+
+    status: draft
+    level: 1 (legal requirement and / or requirement from financial institutions)
+
+    description:
+      general: |
+        Bestiality is defined as:
+
+        > the act of a human having sex with a non-human animal
+
+        While zoophilia is a :
+
+        > term used to describe a humans who is sexually attracted to and/ or arroused by a non-human animal
+
+        It's important to state that these are two different things. A zoophile might have never participated in bestiality, while someone who has done bestiality might not be a zoophile. It's also important to note bestiality is illegal in many places, zoophilia is not.
+
+        On FetLife, we don't allow:
+
+        - Sharing of any real picture or videos involving bestiality
+        - Looking for or telling people to participate in bestiality
+        - Links to bestiality porn
+
+        We do allow however:
+
+        - Intellectual debates and discussions about zoophilia & bestiality
+        - Admitting to being a zoophile
+        - Admitting to having had experience with an animal
+        - Hentai bestaility and monster porn
+        - Tentacle (tentacle dildos or hentai only) porn
+
+      fetish_specific: |
+        We don't permit any bestiality or zoophilia fetishes on FetLife.
+
+      group_specific: |
+        We don't permit any groups devoted to bestiality or zoophilia on FetLife.
+
+
+#
+# Tags: used internally by our on-site report processing interface, includes actions taken
+#
+
+tags:
+
+  - name: Zoophilia
+    category: animals
+    content_types:
+      [picture, video]:
+        action: delete
+      [group.open, group.closed]:
+        description: |
+        action: delete
+      [group_post.open, group_post.closed]:
+        description: |
+        action: delete
+      [fetish]:
+        description: |
+        action: delete
+
+
+#
+# Bad Words: used internally to control search, group creation, and fetish creation
+#
+
+bad_words:
+
+  - bad_word: animal sex
+    context:
+      search: allow
+      fetish_creation: disallow
+      group_creation: disallow
+    aliases:
+    - animalsex
+    - dog sex
+    - dogsex
+    - horse sex
+    - k 9
+    - k9
+    - knoting
+    - knotting
+    - knotted
+
+  - bad_word: bestiality
+    context:
+      search: allow
+      fetish_creation: disallow
+      group_creation: disallow
+    aliases:
+    - bestiality
+    - beastialitality
+    - beastialty
+    - beasiality
+    - beastieality
+    - bestially
+    - bestallity
+    - beastilty
+    - beastality
+    - bestility
+    - beastility
+    - beastyality
+    - beastlily
+    - beastaltity
+    - beasteality
+    - beastilality
+    - beastialitie
+
+  - bad_word: zoophilia
+    context:
+      search: allow
+      fetish_creation: disallow
+      group_creation: disallow
+    aliases:
+    - zooaphilia
+    - zooaphilla
+    - zoofilia
+    - zoophila
+    - zoophillia
+    - zoophily
+    - zoophylia
+    - zoophilie
+    - zoophiles
+    - zoolinction
+    - zoosadist
+    - zooerotism
+
+  - bad_word: zooskool
+    context:
+      search: allow
+      fetish_creation: disallow
+      group_creation: disallow
+    aliases:
+    - zooskool
+
+  - bad_word: red rocket
+    context:
+      search: allow
+      fetish_creation: disallow
+      group_creation: disallow
+    aliases:
+    - redrocket
+    - pink crayon
+
+    # Herpetophilia: the sexual atraction to reptiles, commonly dinosaurs or anthropomorphic lizards.
+  - bad_word: herpetophilia
+    context:
+      search: allow
+      fetish_creation: disallow
+      group_creation: disallow
+
+
+#
+# Research
+#
+
+research:
+  executive_summary: |
+    In many countries, bestiality is illegal as well as the sale, distribution, and ownership of bestiality porn.
+
+    Germany is an interesting country where bestiality is illegal if the animail is forced but it is legal if the animals is not forced. In Germany it's also legal to own bestiality porn but illegal to sell or distribute it.
+
+    The arguments around bestiatlity often times revolve around consent and animal cruelty. Many argue that animals can't consent while others believe that if an animal is not forced there shouldn't be any issues with bestiality.
+
+    In our research, we couldn't find any reputable sites that had any:
+
+    - Real bestiality pics or vids
+
+    But we could find many reputable sites that had:
+
+    - Hentai beast porn
+    - Hentai tentacle porn
+    - Adults enjoying dog, horse, and tentacle dildos
+
+  sources:
+    - name: Wikipedia
+      summary: |
+        From Wikipedia's article on [Zoophilia and the Law]():
+
+        > Laws against **humans performing sex acts on animals, where they exist, are concerned with the actual act**, which it commonly refers to as bestiality, rather than the sexual attraction to animals. For this reason, prohibitions of zoophilic pornography are more varied; they may be unlawful if an actual sex act with an animal is involved, but the status is not clear-cut if there is a mere representation, such as a painting or cartoon. In that case, normal obscenity laws will normally apply. All zoophilic imagery is widely regarded as pornography.
+
+        International differences in the law:
+
+        > Some jurisdictions list laws very clearly, such as England and Wales, which specifically prohibits penetration of a human being by the penis of an animal, and penetration of an animal by a human's penis.[9]
+        >
+        > By contrast, many countries and US states are less precise about the scope of law in that they outlaw sex with animals, without defining what constitutes "sex".
+        >
+        > Even if bestiality is not explicitly prohibited, there are often many other laws which can be used to effectively prosecute cases. For example, most countries have animal cruelty laws, and a prosecutor will argue that all zoophilia activity is animal abuse.[10] In some U.S. states, a person who engages in bestiality can be charged with animal cruelty.
+
+        With respect to animal pornography in cartoons:
+
+        > Erotic art, such as animal pornography in cartoons and the like, which does not require the recording of an actual sexual act, are not usually considered sex with animals by the law, and so their status depends upon more general laws such as legal limits upon obscenity or pornography alone, and the thin line between erotic art and pornography.
+
+        Interesting fact, currently in Germany bestiality is illegal if the animal is forced, and legal if the animal is not forced.
+
+    - name: liveabout
+      summary: |
+        From an articl on the [Difference Between Bestiality and Zoophilia](https://www.liveabout.com/what-is-the-difference-between-bestiality-and-zoophilia-2983266) the difference between the two is stated as:
+
+        > Many people confuse the terms bestiality and zoophilia. They are related, but different.
+        >
+        > Bestiality has always referred to the act of a human having sex with a non-human animal. The sexual activities may or may not involve penetration, but they are sexual behaviors done for gratification.
+        >
+        > Zoophilia was first used in clinical literature by the sexologist Richard von Krafft-Ebing, who used the term to describe a human being who is sexually aroused or inspired by an animal. Today zoophilia is still used to describe the feelings of erotic or sexual attachment to, and/or a sexual preference for, non-human animals.
+        >
+        > The easiest way to distinguish bestiality and zoophilia is to say that bestiality is a practice -- it's something people do. Zoophilia is a preference or experience, something people feel. Not everyone who engages in bestiality is a zoophile, and not all people who identify or would be classified as having zoophilia actually have sex with animals.
+        >
+        > Another important distinction to make is that only having erotic feelings or fantasies involving animals is not against the law, whereas in many places, having sexual relations with a non-human animal is illegal.
+
+    - name: Reddit
+      summary: |
+        TBD
+
+      - topic: Bestiality
+        found: |
+          - r/bestiality was banned from Reddit
+          - 0 bestiality pictures or videos
+          - Multiple intellectual discussions and debates around topic
+          - Multiple conversations talking about their experience
+
+      - topic: Zoophilia / Zoophile
+        found: |
+          - r/zoophilia was banned from Reddit
+          - AMAs and people confessing they are zoophiles
+          - Debates about zoophilia
+
+      - topic: Hentai w/ Bestiality
+        found: |
+          - r/HentaiBeast (72.k) - dedicated to hentai bestiality
+          - r/GameOverGirls (43.8K) - a lot of hentai bestiality
+          - r/allthewaythrough (32.4k) - a lot of hentai bestiality
+
+      - topic: Tentatcle Porn
+        found: |
+          - r/Tentai (80.2k) - dedicated to hentai tentacle porn
+
+      - topic: Furry Porn
+        found: |
+          IMPORTANT NOTE: Furries are not zoophiles and zoophiles are not furries. This is purely for research purposes.
+
+          - r/yiff (80.2k) - dedicated to cartoon furry porn
+
+    - name: Kink
+      summary: |
+        From Kink's [Shooting Rules](https://www.kink.com/page/shooting-rules):
+
+        > **Animal Rights**
+        > It is prohibited to involve actual non-human animals as participants in a sex act or in a sex scene.
+
+        and:
+
+        > **Prohibited Narrative Elements**
+        > Storylines and dialogue may not contain or imply any of the following:
+        >
+        > - ...
+        > - Sex with animals
+        > - ...
+
+      - topic: Bestiality
+        found: |
+          - 0 results
+
+      - topic: Zoophilia / Zoophile
+        found: |
+          - 0 results
+
+      - topic: Hentai w/ Bestiality
+        found: |
+          - 0 results
+
+      - topic: Tentatcle Porn
+        found: |
+          - Found hentai videos
+          - Found real with "tenacle machine"
+
+      - topic: Furry Porn
+        found: |
+          IMPORTANT NOTE: Furries are not zoophiles and zoophiles are not furries. This is purely for research purposes.
+
+          - 0 results
+
+    - name: PornHub
+      summary: |
+        From PornHub's Regulations for Selling Videos:
+
+        > Just like your free videos, there are rules about phrasing in titles when you're selling videos.
+        >
+        > Due to payment processor regulations, the rules are a bit stricter.
+        >
+        > Here's a list of words you can't use in your video titles. Also, if your videos contain any content that matches these descriptions, they'll be taken down as well.
+        >
+        > List of banned words:
+        >
+        > ...
+        > Animal
+        > Animals
+        > ...
+        > Beast
+        > Beastial
+        > beastialism
+        > bestiality
+        > beastliness
+        > Bestial
+        > bestiality
+        > ...
+
+      - topic: Bestiality
+        found: |
+          - Only found suggestion by community to allow bestiality (53 votes)
+
+      - topic: Zoophilia / Zoophile
+        found: |
+          - A few anthromomorphic catoon porn videos
+
+      - topic: Hentai w/ Bestiality
+        found: |
+          - 1,170 results under Hentai Monster
+
+      - topic: Tentatcle Porn
+        found: |
+          - hentai tentacle: 1,735 results
+          - tentacle: 1,110 results with real porn but fake tentacles
+
+      - topic: Furry Porn
+        found: |
+          IMPORTANT NOTE: Furries are not zoophiles and zoophiles are not furries. This is purely for research purposes.
+
+          - 2,264 results
+
+    - name: Manyvids
+      summary: |
+        From ManyVids [Upload Rules]():
+
+        > No Animal Sex - No vids or images with animals involved in sexual activities.
+
+        From ManyVids [Banned Words]():
+
+        > an1mal
+        > animal
+        > ...
+        > bestiality
+        > bestiality
+        > ...
+        > zoophilia
+
+      - topic: Bestiality
+        found: |
+          - 0 results in search
+          - Videos with dog dildos and horse dildos
+          - Mentioned in people's limits when ordering custom vids
+          - Article on the history of sex that mentions bestiality
+
+      - topic: Zoophilia / Zoophile
+        found: |
+          - 0 results in search
+          - Mentioned in people's limits when ordering custom vids
+
+      - topic: Hentai w/ Bestiality
+        found: |
+          - 0 results
+
+      - topic: Tentatcle Porn
+        found: |
+          - Tentacle: > 1,000 results
+          - Videos of people enjoying tentacle dildos
+
+      - topic: Furry Porn
+        found: |
+          IMPORTANT NOTE: Furries are not zoophiles and zoophiles are not furries. This is purely for research purposes.
+
+          - 2,264 results
+
+    - name: Facebook
+      summary: |
+        Found under [Sexual Exploitation of Adults](https://www.facebook.com/communitystandards/regulated_goods) within Facebook’s Community Standards:
+
+        > Do not post:
+        >
+        > In instances where content consists of any form of non-consensual sexual touching, crushing, necrophilia or bestiality, including:
+        >
+        > - Depictions (including real photos/videos), or
+        > - Advocacy (including aspirational and conditional statements), or
+        > - Statements of intent, or
+        > - Calls for action, or
+        > - Threatening, soliciting, or stating an intent to share imagery, or
+        > - Participation by yourself or others to engage in any form of the above mentioned sexual acts.
+
+    - name: Mastercard Rules
+      summary: |
+        Found in [MasterCard Rules] under section 5.11.7:
+
+        > The sale of a product or service, including an image, which is patently offensive and lacks serious artistic value (such as, by way of example and not limitation, images of non-consensual sexual behaviour, sexual exploitation of a minor, nonconsensual mutilation of a person or body part, and **bestiality**), or any other material the corporation deems unacceptable to sell in connection with the mark.
+
+    - name: Other
+      summary: |
+        - [Zoophilia and the law](https://en.wikipedia.org/wiki/Zoophilia_and_the_law)
+        - [Legaliltiy of bestiality in the United States](https://en.wikipedia.org/wiki/Legality_of_bestiality_in_the_United_States)
+        - [All sexual acts with animals now illegal in Canada with new bestiality law](https://www.vancourier.com/all-sexual-acts-with-animals-now-illegal-in-canada-with-new-bestiality-law-1.23862878)
